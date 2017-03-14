@@ -1,5 +1,6 @@
 package tianhuafang.project1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,8 @@ public class AdvancedGame extends AppCompatActivity {
 
     private ImageButton paper_btn,rock_btn,cis_btn,liz_btn, spo_btn;
     private TextView numRound, numWin,numRate, result;
-    private Button set_btn, rule_btn;
+    private Button set_btn;
+    private static Button rule_button;
     int count=0;
     int win=0;
     @Override
@@ -22,6 +24,7 @@ public class AdvancedGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced_game);
 
+        rule_btn_Click();
         //initialize buttons
         paper_btn = (ImageButton) findViewById(R.id.paper_adv_btn);
         rock_btn = (ImageButton) findViewById(R.id.rock_adv_btn);
@@ -52,8 +55,22 @@ public class AdvancedGame extends AppCompatActivity {
         set_btn.setOnClickListener(reset);
 
 
+
     }
 
+    //rule button
+    public void rule_btn_Click(){
+        rule_button=(Button)findViewById(R.id.rule_btn);
+        rule_button.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent3 = new Intent("tianhuafang.project1.rule_advanced");
+                        startActivity(intent3);
+                    }
+                }
+        );
+    }//rule button end
 
 
     private class resetListener implements View.OnClickListener{
@@ -343,4 +360,7 @@ public class AdvancedGame extends AppCompatActivity {
 
         }//Onclick end
     }//listener end
+
+
+
 }
