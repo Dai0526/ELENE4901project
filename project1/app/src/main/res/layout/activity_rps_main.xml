@@ -13,39 +13,15 @@
     tools:context="tianhuafang.project1.RPS_main">
 
     <TextView
-        android:text="Let's Play The Game!"
         android:textColor="@color/white"
+        android:text="Let's Play The Game!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/rps_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/scissor"
-        android:id="@+id/cis_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/player1_txt" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rock"
-        android:id="@+id/rock_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/paper"
-        android:id="@+id/wrap_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/player2_txt" />
 
     <TextView
         android:textColor="@color/white"
@@ -109,34 +85,6 @@
         android:layout_above="@+id/pc_choice"
         android:layout_alignEnd="@+id/rps_title" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:id="@+id/player_choice"
-        android:layout_below="@+id/player2_txt"
-        android:layout_alignEnd="@+id/player2_txt"
-        android:layout_marginTop="17dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:id="@+id/pc_choice"
-        android:layout_marginTop="17dp"
-        android:layout_below="@+id/player1_txt"
-        android:layout_alignStart="@+id/player1_txt" />
-
-    <TextView
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result_txt"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="RESULT"
-        android:layout_below="@+id/player_choice"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:textColor="@color/white"
         android:layout_width="wrap_content"
@@ -159,6 +107,14 @@
         android:layout_alignTop="@+id/rate_txt"
         android:layout_alignBottom="@+id/rate_txt" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/scissor"
+        android:id="@+id/cis_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/rock_btn" />
+
     <Button
 
         android:textSize="10sp"
@@ -168,7 +124,51 @@
         android:id="@+id/reset_btn"
         android:elevation="0dp"
         style="@style/Widget.AppCompat.Button.Small"
-        android:layout_below="@+id/win_result_txt"
+        android:layout_alignBaseline="@+id/rate_result_txt"
+        android:layout_alignBottom="@+id/rate_result_txt"
         android:layout_alignEnd="@+id/wrap_btn" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question"
+        android:id="@+id/pc_choice"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/player1_txt"
+        android:layout_alignStart="@+id/cis_btn" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question"
+        android:id="@+id/player_choice"
+        android:layout_alignTop="@+id/pc_choice"
+        android:layout_toEndOf="@+id/round_result_txt" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="RESULT"
+        android:layout_alignBottom="@+id/pc_choice"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rock"
+        android:id="@+id/rock_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/paper"
+        android:id="@+id/wrap_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/player_choice" />
 
 </RelativeLayout>

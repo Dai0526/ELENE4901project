@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 public class RPS_main extends AppCompatActivity {
     private ImageView user_choice,pc_choice;
-
-
     private ImageButton w_btn,r_btn,s_btn;
     private TextView numRound, numWin,numRate, result;
     private Button set_btn;
