@@ -16,6 +16,8 @@ public class RPS_main extends AppCompatActivity {
     int count=0;
     int win=0;
 
+
+    //in this game, rock is elephant, mouse is paper, cat is scissor
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,10 +70,10 @@ public class RPS_main extends AppCompatActivity {
             count++;
             switch (rand){
                 case 1:   //rock
-                    pc_choice.setImageResource(R.drawable.rock);
+                    pc_choice.setImageResource(R.drawable.elephant);
                     switch(v.getId()){
                         case R.id.rock_btn:  //rock vs rock
-                            user_choice.setImageResource(R.drawable.rock);
+                            user_choice.setImageResource(R.drawable.elephant);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
                             numWin.setText(String.valueOf(win));
@@ -80,7 +82,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.wrap_btn:
-                            user_choice.setImageResource(R.drawable.paper);
+                            user_choice.setImageResource(R.drawable.rat);
                             win++;
                             result.setText("WIN!");
                             numRound.setText(String.valueOf(count));
@@ -90,7 +92,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.cis_btn:
-                            user_choice.setImageResource(R.drawable.scissor);
+                            user_choice.setImageResource(R.drawable.cat);
                             result.setText("LOSE!");
                             numRound.setText(String.valueOf(count));
                             numWin.setText(String.valueOf(win));
@@ -101,10 +103,10 @@ public class RPS_main extends AppCompatActivity {
                     }
                     break;
                 case 2:
-                    pc_choice.setImageResource(R.drawable.paper);
+                    pc_choice.setImageResource(R.drawable.rat);
                     switch(v.getId()){
                         case R.id.wrap_btn:  //rock vs rock
-                            user_choice.setImageResource(R.drawable.paper);
+                            user_choice.setImageResource(R.drawable.rat);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
                             numWin.setText(String.valueOf(win));
@@ -113,7 +115,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.cis_btn:
-                            user_choice.setImageResource(R.drawable.scissor);
+                            user_choice.setImageResource(R.drawable.cat);
                             win++;
                             result.setText("WIN!");
                             numRound.setText(String.valueOf(count));
@@ -123,7 +125,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.rock_btn:
-                            user_choice.setImageResource(R.drawable.rock);
+                            user_choice.setImageResource(R.drawable.elephant);
 
                             result.setText("LOSE!");
                             numRound.setText(String.valueOf(count));
@@ -135,10 +137,10 @@ public class RPS_main extends AppCompatActivity {
                     }
                     break;
                 case 3:
-                    pc_choice.setImageResource(R.drawable.scissor);
+                    pc_choice.setImageResource(R.drawable.cat);
                     switch(v.getId()){
-                        case R.id.cis_btn:  //rock vs rock
-                            user_choice.setImageResource(R.drawable.scissor);
+                        case R.id.cis_btn:  //scissor
+                            user_choice.setImageResource(R.drawable.cat);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
                             numWin.setText(String.valueOf(win));
@@ -147,7 +149,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.rock_btn:
-                            user_choice.setImageResource(R.drawable.rock);
+                            user_choice.setImageResource(R.drawable.elephant);
                             win++;
                             result.setText("WIN!");
                             numRound.setText(String.valueOf(count));
@@ -157,7 +159,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.wrap_btn:
-                            user_choice.setImageResource(R.drawable.paper);
+                            user_choice.setImageResource(R.drawable.rat);
                             result.setText("LOSE!");
                             numRound.setText(String.valueOf(count));
                             numWin.setText(String.valueOf(win));

@@ -20,23 +20,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/paper_adv_btn" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:id="@+id/user"
-        android:layout_alignTop="@+id/pc"
-        android:layout_alignEnd="@+id/paper_adv_btn" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:layout_marginTop="45dp"
-        android:id="@+id/pc"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/rock_adv_btn" />
-
     <TextView
         android:textColor="@color/orange"
         android:text="Player"
@@ -100,15 +83,6 @@
         android:layout_below="@+id/result_text"
         android:layout_toEndOf="@+id/rock_adv_btn" />
 
-    <TextView
-        android:text="result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_alignBottom="@+id/pc"
-        android:layout_alignStart="@+id/sic_adv_btn" />
-
     <Button
         android:text="Rule"
         android:layout_width="wrap_content"
@@ -116,18 +90,7 @@
         android:id="@+id/rule_btn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:layout_below="@+id/numWin"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/user" />
-
-    <Button
-        android:text="Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/reset_btn"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:layout_alignTop="@+id/numRound"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/rule_btn" />
+        android:layout_alignStart="@+id/reset_btn" />
 
     <TextView
         android:text="0"
@@ -165,13 +128,48 @@
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/textView6" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question"
+        android:id="@+id/pc"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignTop="@+id/pc"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question"
+        android:id="@+id/user"
+        android:layout_alignTop="@+id/result_text"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/numRound"
+        android:layout_alignParentEnd="true" />
+
     <TextView
         android:text="Win#"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_below="@+id/reset_btn"
+        android:layout_alignBottom="@+id/reset_btn"
         android:layout_alignStart="@+id/textView5" />
 
 </RelativeLayout>

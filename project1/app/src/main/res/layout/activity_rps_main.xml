@@ -30,37 +30,8 @@
         android:id="@+id/round_result_txt"
         android:text="0      "
         android:layout_toEndOf="@+id/rock_btn"
-        android:layout_alignTop="@+id/round_txt" />
-
-    <TextView
-        android:text="Win Rate"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/win_txt"
-        android:layout_alignStart="@+id/result_txt"
-        android:layout_marginTop="31dp"
-        android:id="@+id/rate_txt" />
-
-    <TextView
-        android:text="Round#"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/round_txt"
-        android:layout_marginTop="65dp"
-        android:layout_below="@+id/result_txt"
-        android:layout_alignStart="@+id/win_txt" />
-
-    <TextView
-        android:text="Win#"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/win_txt"
-        android:layout_below="@+id/round_txt"
-        android:layout_alignStart="@+id/result_txt"
-        android:layout_marginTop="21dp" />
+        android:layout_alignTop="@+id/round_txt"
+        android:layout_alignStart="@+id/player2_txt" />
 
     <TextView
         android:text="PC"
@@ -107,13 +78,22 @@
         android:layout_alignTop="@+id/rate_txt"
         android:layout_alignBottom="@+id/rate_txt" />
 
-    <ImageButton
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/scissor"
-        android:id="@+id/cis_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/rock_btn" />
+        app:srcCompat="@drawable/question"
+        android:id="@+id/pc_choice"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/player1_txt"
+        android:layout_alignEnd="@+id/player1_txt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question"
+        android:id="@+id/player_choice"
+        android:layout_alignBottom="@+id/result_txt"
+        android:layout_alignStart="@+id/reset_btn" />
 
     <Button
 
@@ -124,28 +104,67 @@
         android:id="@+id/reset_btn"
         android:elevation="0dp"
         style="@style/Widget.AppCompat.Button.Small"
-        android:layout_alignBaseline="@+id/rate_result_txt"
         android:layout_alignBottom="@+id/rate_result_txt"
-        android:layout_alignEnd="@+id/wrap_btn" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:id="@+id/pc_choice"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/player1_txt"
-        android:layout_alignStart="@+id/cis_btn" />
+        app:srcCompat="@drawable/rat"
+        android:id="@+id/wrap_btn"
+        android:layout_alignBottom="@+id/rock_btn"
+        android:layout_alignParentEnd="true" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/question"
-        android:id="@+id/player_choice"
-        android:layout_alignTop="@+id/pc_choice"
-        android:layout_toEndOf="@+id/round_result_txt" />
+        app:srcCompat="@drawable/cat"
+        android:id="@+id/cis_btn"
+        android:layout_alignBottom="@+id/rock_btn"
+        android:layout_alignStart="@+id/pc_choice" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/elephant"
+        android:id="@+id/rock_btn"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
+        android:text="Win#"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/win_txt"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/round_txt"
+        android:layout_toStartOf="@+id/rock_btn" />
+
+    <TextView
+        android:text="Win Rate"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/rate_txt"
+        android:layout_below="@+id/win_txt"
+        android:layout_alignStart="@+id/win_txt" />
+
+    <TextView
+        android:text="Round#"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/round_txt"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/result_txt"
+        android:layout_alignStart="@+id/win_txt" />
+
+    <TextView
+        android:gravity="center"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -153,22 +172,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:text="RESULT"
         android:layout_alignBottom="@+id/pc_choice"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rock"
-        android:id="@+id/rock_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/paper"
-        android:id="@+id/wrap_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/player_choice" />
+        android:layout_alignEnd="@+id/round_result_txt" />
 
 </RelativeLayout>

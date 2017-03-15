@@ -12,15 +12,15 @@
     android:background="@drawable/rps_bg"
     tools:context="tianhuafang.project1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Basic  Game"
+        android:id="@+id/start_btn"
+        android:onClick="start_btn_Click"
         android:layout_height="wrap_content"
-        android:text="Rock Paper scissor"
-        android:textColor="@color/white"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/advanced_btn"
+        android:layout_alignStart="@+id/advanced_btn"
+        android:layout_alignEnd="@+id/advanced_btn" />
 
     <Button
         android:text="Advanced Game"
@@ -28,19 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/advanced_btn"
         android:onClick="adv_btn_Click"
-        android:layout_marginBottom="29dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Basic  Game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/start_btn"
-        android:layout_marginBottom="12dp"
-        android:onClick="start_btn_Click"
-        android:layout_above="@+id/advanced_btn"
-        android:layout_alignEnd="@+id/advanced_btn"
-        android:layout_alignStart="@+id/advanced_btn" />
 
 </RelativeLayout>
