@@ -2,94 +2,211 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_b206323edf33ce9ae9280120433f94c669ec44b1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_a01343acd4adeb6519824340b1edb47d16227e88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_97c8e573c8e4ac11c89d283e0ab8ca7a5ec37fca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_48c6703f2e217b2c2198e41b4fca817a46782386.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_7791872988baba4b67c39294c7cd93e2d45319c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_f9b2ba8888d7ccbf239249e9ad9ab7f539d61d05.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_c5266edb097bdb4c0579e95fbc0c28e175576000.jar" />
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_d3cf6ec097b173c44d91f712e282d7ddfb08a944\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_5a1aa295bc3c10c783b02dd6375db53d758a4375.jar" />
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_9d897b25461602d2de0d058d9ef2fd8961e9d539\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_3cceb7669ffa5428aae76a36e9a7787c65fc4f7a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/home/cckec/Documents/Android/proj1Vhandin/ELENE4901project/project1/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_fbe713dc00e5cc95de428be996c4fd87bca24de0.jar" />
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_bfe30aa1cdb4b7694ece7f2ede9d28b7a0fedccf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_3fc26eb575eb24d3549d3bd2efe084b668916124\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_390bbb1f9708863b4b7a991c2e03a339285f52fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_884912e404bed6d79d5e7a099db9b721d7aac2f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_83960e069e4203b96373994bc74c2a55acf308f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4f31998b0274f888b3ed5377a63a561519adb26">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_57234b68ac8f691e2167861b4822a8a6469aacb6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_03f43b023d83fafd6d56a26cd0bee4da2425f5e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_0835c1a6cb5cb83e45c23bfe04ce6c5f8e1d146b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_e667b86bf836ce09c1fe8a110b118a338d961266\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_918a7b037c983e38b1d1a631ed35d8d2b7f6e15e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_0142e30990065bb7e86432b7c6aefef10b87f95e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="257dd3060ea6ca20bb5cf8a45ad78bcd640de313">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_3fcbb804e48fda9cc661ca6b4b37145b0742db68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tianhua\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_69633ed1061742aec456271dbd23a82b4b7fbc05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_2d2ce37af2ab16430e268cbb2dc46c25f1dfc3f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_e42633fc5d719f5ffd032c1f98edf0236c85470c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_1b274c06fb28785e3179e131423b481399b976ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f0fa40e00f55fd5766a863501e52a78e2a475a9b">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6d32aa93d0db8b16202dfda664524f0b68ce57e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cbc20318f89ffb031d2e5d08cb89a11bea76c766">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c30fcb05d0f293f6944fa696eac2045b61243b37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_2323187c1b8242e8a8fdef32b553977c27ee412d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_184163d0a364a6a0301ce59bf8c89d471166585a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANdroid\project1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="F:\ANdroid\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_5c62fe5d850c20406869b20e070f3c6d3d24b964\classes.dex" />
     </item>
 
 </items>

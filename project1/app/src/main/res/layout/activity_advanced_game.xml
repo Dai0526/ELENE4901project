@@ -74,25 +74,6 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Round#"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/textView5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_below="@+id/result_text"
-        android:layout_toEndOf="@+id/rock_adv_btn" />
-
-    <Button
-        android:text="Rule"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rule_btn"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:layout_below="@+id/numWin"
-        android:layout_alignStart="@+id/reset_btn" />
-
-    <TextView
         android:text="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,15 +100,6 @@
         android:layout_alignBottom="@+id/textView5"
         android:layout_alignStart="@+id/numWin" />
 
-    <TextView
-        android:text="Win Rate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView6" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,21 +109,21 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="21dp" />
 
-    <TextView
-        android:text="result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_alignTop="@+id/pc"
-        android:layout_alignStart="@+id/textView5" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/question"
         android:id="@+id/user"
         android:layout_alignTop="@+id/result_text"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rule_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/reset_btn"
         android:layout_alignParentEnd="true" />
 
     <Button
@@ -164,12 +136,40 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:text="Win Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/reset_btn"
+        android:layout_alignEnd="@+id/liz_adv_btn" />
+
+    <TextView
+        android:text="Round#"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/pc"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
         android:text="Win#"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBaseline="@+id/reset_btn"
         android:layout_alignBottom="@+id/reset_btn"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:text="result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignTop="@+id/pc"
+        android:layout_toEndOf="@+id/rock_adv_btn" />
 
 </RelativeLayout>
