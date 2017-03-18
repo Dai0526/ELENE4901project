@@ -1,5 +1,7 @@
 package tianhuafang.project1;
 
+import android.content.Context;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +18,11 @@ public class RPS_main extends AppCompatActivity {
     int count=0;
     int win=0;
 
+    int rand;
+    int cheat = 0;
+    private Button c_btn;
+
+    Context context = this;
 
     //in this game, rock is elephant, mouse is paper, cat is scissor
     @Override
@@ -46,6 +53,43 @@ public class RPS_main extends AppCompatActivity {
 
         resetListener reset = new resetListener();
         set_btn.setOnClickListener(reset);
+
+        // initialize cheat button
+        c_btn = (Button) findViewById(R.id.cheat_btn);
+        cheatListener cheattime = new cheatListener();
+        c_btn.setOnClickListener(cheattime);
+
+        // bgm
+        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm.start();
+    }
+
+    private class cheatListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            //sound
+            final MediaPlayer mpcheat = MediaPlayer.create(context, R.raw.cheat);
+            mpcheat.start();
+
+            rand = (int) (Math.random()*3+1);
+            cheat = 1;
+
+            switch (rand){
+                case 1:
+                    pc_choice.setImageResource(R.drawable.elephant);
+                    break;
+                case 2:
+                    pc_choice.setImageResource(R.drawable.rat);
+                    break;
+                case 3:
+                    pc_choice.setImageResource(R.drawable.cat);
+                    break;
+
+            }
+            result.setText("CHEAT");
+            user_choice.setImageResource(R.drawable.question);
+        }
     }
 
     private class resetListener implements View.OnClickListener{
@@ -66,13 +110,24 @@ public class RPS_main extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            int rand = (int) (Math.random()*3+1);
+
+            // for sound effect
+            final MediaPlayer mpele = MediaPlayer.create(context, R.raw.ele);
+            final MediaPlayer mpmou = MediaPlayer.create(context, R.raw.mou);
+            final MediaPlayer mpcat = MediaPlayer.create(context, R.raw.cat);
+
+            if(cheat == 0){
+                rand = (int) (Math.random()*3+1);
+            }
+            cheat = 0;
+
             count++;
             switch (rand){
                 case 1:   //rock
                     pc_choice.setImageResource(R.drawable.elephant);
                     switch(v.getId()){
                         case R.id.rock_btn:  //rock vs rock
+                            mpele.start();
                             user_choice.setImageResource(R.drawable.elephant);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
@@ -82,6 +137,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.wrap_btn:
+                            mpmou.start();
                             user_choice.setImageResource(R.drawable.rat);
                             win++;
                             result.setText("WIN!");
@@ -92,6 +148,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.cis_btn:
+                            mpcat.start();
                             user_choice.setImageResource(R.drawable.cat);
                             result.setText("LOSE!");
                             numRound.setText(String.valueOf(count));
@@ -106,6 +163,7 @@ public class RPS_main extends AppCompatActivity {
                     pc_choice.setImageResource(R.drawable.rat);
                     switch(v.getId()){
                         case R.id.wrap_btn:  //rock vs rock
+                            mpmou.start();
                             user_choice.setImageResource(R.drawable.rat);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
@@ -115,6 +173,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.cis_btn:
+                            mpcat.start();
                             user_choice.setImageResource(R.drawable.cat);
                             win++;
                             result.setText("WIN!");
@@ -125,6 +184,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.rock_btn:
+                            mpele.start();
                             user_choice.setImageResource(R.drawable.elephant);
 
                             result.setText("LOSE!");
@@ -140,6 +200,7 @@ public class RPS_main extends AppCompatActivity {
                     pc_choice.setImageResource(R.drawable.cat);
                     switch(v.getId()){
                         case R.id.cis_btn:  //scissor
+                            mpcat.start();
                             user_choice.setImageResource(R.drawable.cat);
                             result.setText("TIED!");
                             numRound.setText(String.valueOf(count));
@@ -149,6 +210,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.rock_btn:
+                            mpele.start();
                             user_choice.setImageResource(R.drawable.elephant);
                             win++;
                             result.setText("WIN!");
@@ -159,6 +221,7 @@ public class RPS_main extends AppCompatActivity {
                             }
                             break;
                         case R.id.wrap_btn:
+                            mpmou.start();
                             user_choice.setImageResource(R.drawable.rat);
                             result.setText("LOSE!");
                             numRound.setText(String.valueOf(count));
