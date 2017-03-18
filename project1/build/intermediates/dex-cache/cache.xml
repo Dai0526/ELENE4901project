@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="85a2f745558cfd9f1d4d2a703fbfceed36b19d08">
+        sha1="c4f31998b0274f888b3ed5377a63a561519adb26">
         <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_57234b68ac8f691e2167861b4822a8a6469aacb6\classes.dex" />
     </item>
     <item
@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9f7bac843e98b51f3ff1a43d7cb34e0c85289a4b">
+        sha1="257dd3060ea6ca20bb5cf8a45ad78bcd640de313">
         <dex dex="D:\Academic\Columbia Spring 2017\Android\ELENE4901project\project1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_3fcbb804e48fda9cc661ca6b4b37145b0742db68\classes.dex" />
     </item>
     <item

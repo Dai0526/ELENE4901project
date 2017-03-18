@@ -145,15 +145,6 @@
         android:layout_alignEnd="@+id/liz_adv_btn" />
 
     <TextView
-        android:text="result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_alignTop="@+id/pc"
-        android:layout_alignStart="@+id/sic_adv_btn" />
-
-    <TextView
         android:text="Round#"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -171,5 +162,14 @@
         android:layout_alignBaseline="@+id/reset_btn"
         android:layout_alignBottom="@+id/reset_btn"
         android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:text="result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignTop="@+id/pc"
+        android:layout_toEndOf="@+id/rock_adv_btn" />
 
 </RelativeLayout>
