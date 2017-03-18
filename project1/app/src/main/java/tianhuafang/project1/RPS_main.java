@@ -11,17 +11,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class RPS_main extends AppCompatActivity {
+
+    // declare variable for the main program
     private ImageView user_choice,pc_choice;
     private ImageButton w_btn,r_btn,s_btn;
     private TextView numRound, numWin,numRate, result;
     private Button set_btn;
     int count=0;
     int win=0;
-
+    // declare varable for the cheat button
     int rand;
     int cheat = 0;
     private Button c_btn;
-
+    // declare context for the mediaplayer
     Context context = this;
 
     //in this game, rock is elephant, mouse is paper, cat is scissor
