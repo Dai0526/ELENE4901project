@@ -7,9 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+//main UI--entrance for the game
+
 public class MainActivity extends AppCompatActivity {
     private static Button begin_btn;
     private static Button adv_btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         adv_btn_Click();
     }
 
+
+    //basic game
     public void start_btn_Click(){
         begin_btn=(Button)findViewById(R.id.start_btn);
         begin_btn.setOnClickListener(
@@ -33,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-
+    //advanced game
     public void adv_btn_Click(){
         adv_btn=(Button)findViewById(R.id.advanced_btn);
         adv_btn.setOnClickListener(

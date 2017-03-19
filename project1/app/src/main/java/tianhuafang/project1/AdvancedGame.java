@@ -12,30 +12,33 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AdvancedGame extends AppCompatActivity {
-    private ImageView user,pc;
-
-
-    private ImageButton paper_btn,rock_btn,cis_btn,liz_btn, spo_btn;
-    private TextView numRound, numWin,numRate, result;
-    private Button set_btn;
-    private static Button rule_button;
+    private ImageView user,pc;   // To dispaly user choice and PC's choice
+    private ImageButton paper_btn,rock_btn,cis_btn,liz_btn, spo_btn;  // options image button
+    private TextView numRound, numWin,numRate, result;  // game stat
+    private Button set_btn;  //reset button
+    private static Button rule_button;  // go to rule activity
     int count=0;
     int win=0;
     Context context = this;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced_game);
 
+        // go to rule_advanced activity to check game ruls
         rule_btn_Click();
+
         //initialize buttons
         paper_btn = (ImageButton) findViewById(R.id.paper_adv_btn);
         rock_btn = (ImageButton) findViewById(R.id.rock_adv_btn);
         cis_btn = (ImageButton) findViewById(R.id.sic_adv_btn);
         liz_btn = (ImageButton) findViewById(R.id.liz_adv_btn);
         spo_btn = (ImageButton) findViewById(R.id.spo_adv_btn);
+
         //initialize buttons
         set_btn = (Button) findViewById(R.id.reset_btn);
+
         //initialize imageView
         user = (ImageView) findViewById(R.id.user);
         pc = (ImageView) findViewById(R.id.pc);
@@ -48,6 +51,7 @@ public class AdvancedGame extends AppCompatActivity {
 
         MyOnClickListener my_click= new MyOnClickListener();
 
+        //set onclick event for the button
         paper_btn.setOnClickListener(my_click);
         rock_btn.setOnClickListener(my_click);
         cis_btn.setOnClickListener(my_click);
@@ -57,8 +61,9 @@ public class AdvancedGame extends AppCompatActivity {
         resetListener reset = new resetListener();
         set_btn.setOnClickListener(reset);
 
-        // bgm
+        // bgm and muiltmedia
         final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm);
+        mpbgm.setLooping(true);
         mpbgm.start();
 
     }
@@ -78,6 +83,8 @@ public class AdvancedGame extends AppCompatActivity {
     }//rule button end
 
 
+
+    //reset button on click event
     private class resetListener implements View.OnClickListener{
 
         @Override
@@ -93,12 +100,13 @@ public class AdvancedGame extends AppCompatActivity {
     }
 
 
+    //logic for this game and all sound effects
     public class MyOnClickListener implements View.OnClickListener{
 
         @Override
         public void onClick(View v) {
 
-            // for sound effect
+            // for sound effect for each button
             final MediaPlayer mpbr = MediaPlayer.create(context, R.raw.b1);
             final MediaPlayer mpbp = MediaPlayer.create(context, R.raw.b2);
             final MediaPlayer mpbs = MediaPlayer.create(context, R.raw.b3);
