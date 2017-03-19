@@ -25,6 +25,8 @@ public class RPS_main extends AppCompatActivity {
     private Button c_btn;
     // declare context for the mediaplayer
     Context context = this;
+    // mp for bgm
+    MediaPlayer mpbgm;
 
     //in this game, rock is elephant, mouse is paper, cat is scissor
     @Override
@@ -62,7 +64,19 @@ public class RPS_main extends AppCompatActivity {
         c_btn.setOnClickListener(cheattime);
 
         // bgm
-        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm.start();
+    }
+
+    public void onPause(){
+        super.onPause();
+        if(mpbgm!=null){
+            mpbgm.release();
+        }
+    }
+
+    public void onResume(){
+        super.onResume();
         mpbgm.start();
     }
 
