@@ -19,16 +19,19 @@ public class RPS_main extends AppCompatActivity {
     private Button set_btn;
     int count=0;
     int win=0;
+
     // declare varable for the cheat button
     int rand;
-    int cheat = 0;
+    int cheat = 0;       //flag for cheating mode, 0 is off, 1 is on
     private Button c_btn;
+
+
     // declare context for the mediaplayer
     Context context = this;
     // mp for bgm
     MediaPlayer mpbgm;
 
-    //in this game, rock is elephant, mouse is paper, cat is scissor
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +41,10 @@ public class RPS_main extends AppCompatActivity {
         w_btn = (ImageButton) findViewById(R.id.wrap_btn);
         r_btn = (ImageButton) findViewById(R.id.rock_btn);
         s_btn = (ImageButton) findViewById(R.id.cis_btn);
+
         //initialize buttons
         set_btn = (Button) findViewById(R.id.reset_btn);
+
         //initialize imageView
         user_choice = (ImageView) findViewById(R.id.player_choice);
         pc_choice = (ImageView) findViewById(R.id.pc_choice);
@@ -64,6 +69,7 @@ public class RPS_main extends AppCompatActivity {
         c_btn.setOnClickListener(cheattime);
 
         // bgm
+<<<<<<< HEAD
         mpbgm = MediaPlayer.create(context, R.raw.bgm2);
         mpbgm.start();
     }
@@ -77,9 +83,15 @@ public class RPS_main extends AppCompatActivity {
 
     public void onResume(){
         super.onResume();
+=======
+        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm.setLooping(true);
+>>>>>>> e5862722469eca5cdc0b4ffd732f9065a1c17e01
         mpbgm.start();
     }
 
+
+    // cheating mode turn on click
     private class cheatListener implements View.OnClickListener{
 
         @Override
@@ -88,8 +100,8 @@ public class RPS_main extends AppCompatActivity {
             final MediaPlayer mpcheat = MediaPlayer.create(context, R.raw.cheat);
             mpcheat.start();
 
-            rand = (int) (Math.random()*3+1);
-            cheat = 1;
+            rand = (int) (Math.random()*3+1); // take the rand number and it will be passed to game
+            cheat = 1;   // set flag to 1 -- on
 
             switch (rand){
                 case 1:
@@ -108,6 +120,7 @@ public class RPS_main extends AppCompatActivity {
         }
     }
 
+    //reset button
     private class resetListener implements View.OnClickListener{
 
         @Override
@@ -122,6 +135,7 @@ public class RPS_main extends AppCompatActivity {
         }
     }
 
+    //game logic--> modified from the tutorial--> rock is elephant, mouse is paper, cat is scissor
     public class MyOnClickListener implements View.OnClickListener{
 
         @Override
