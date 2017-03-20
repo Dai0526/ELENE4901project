@@ -69,8 +69,8 @@ public class RPS_main extends AppCompatActivity {
         c_btn.setOnClickListener(cheattime);
 
         // bgm
-<<<<<<< HEAD
         mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm.setLooping(true);
         mpbgm.start();
     }
 
@@ -78,15 +78,21 @@ public class RPS_main extends AppCompatActivity {
         super.onPause();
         if(mpbgm!=null){
             mpbgm.release();
+            mpbgm=null;
         }
     }
 
+    protected void onStop(){
+        super.onStop();
+        if(mpbgm!=null){
+            mpbgm.release();
+            mpbgm=null;
+        }
+    }
     public void onResume(){
         super.onResume();
-=======
-        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm = MediaPlayer.create(context, R.raw.bgm2);
         mpbgm.setLooping(true);
->>>>>>> e5862722469eca5cdc0b4ffd732f9065a1c17e01
         mpbgm.start();
     }
 

@@ -119,14 +119,6 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cat"
-        android:id="@+id/cis_btn"
-        android:layout_alignBottom="@+id/rock_btn"
-        android:layout_alignStart="@+id/pc_choice" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@drawable/elephant"
         android:id="@+id/rock_btn"
         android:layout_marginBottom="19dp"
@@ -181,5 +173,13 @@
         android:text="Cheat"
         android:layout_below="@+id/result_txt"
         android:layout_alignEnd="@+id/rock_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cat"
+        android:id="@+id/cis_btn"
+        android:layout_alignBottom="@+id/rock_btn"
+        android:layout_alignStart="@+id/pc_choice" />
 
 </RelativeLayout>
