@@ -61,10 +61,6 @@ public class AdvancedGame extends AppCompatActivity {
         resetListener reset = new resetListener();
         set_btn.setOnClickListener(reset);
 
-        // bgm and muiltmedia
-        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm);
-        mpbgm.setLooping(true);
-        mpbgm.start();
 
     }
 
