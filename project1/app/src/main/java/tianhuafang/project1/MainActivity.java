@@ -1,6 +1,8 @@
 package tianhuafang.project1;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     private static Button begin_btn;
     private static Button adv_btn;
+    Context context = this;
 
 
     @Override
@@ -21,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         start_btn_Click();
         adv_btn_Click();
+
+
+        // bgm start here
+        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
+        mpbgm.setLooping(true);
+        mpbgm.start();
     }
 
 

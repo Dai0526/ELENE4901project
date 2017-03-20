@@ -28,8 +28,6 @@ public class RPS_main extends AppCompatActivity {
 
     // declare context for the mediaplayer
     Context context = this;
-    // mp for bgm
-    MediaPlayer mpbgm;
 
 
     @Override
@@ -68,27 +66,9 @@ public class RPS_main extends AppCompatActivity {
         cheatListener cheattime = new cheatListener();
         c_btn.setOnClickListener(cheattime);
 
-        // bgm
-<<<<<<< HEAD
-        mpbgm = MediaPlayer.create(context, R.raw.bgm2);
-        mpbgm.start();
+
     }
 
-    public void onPause(){
-        super.onPause();
-        if(mpbgm!=null){
-            mpbgm.release();
-        }
-    }
-
-    public void onResume(){
-        super.onResume();
-=======
-        final MediaPlayer mpbgm = MediaPlayer.create(context, R.raw.bgm2);
-        mpbgm.setLooping(true);
->>>>>>> e5862722469eca5cdc0b4ffd732f9065a1c17e01
-        mpbgm.start();
-    }
 
 
     // cheating mode turn on click
