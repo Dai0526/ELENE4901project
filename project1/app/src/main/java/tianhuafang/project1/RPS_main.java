@@ -67,9 +67,8 @@ public class RPS_main extends AppCompatActivity {
         c_btn.setOnClickListener(cheattime);
 
 
+
     }
-
-
 
     // cheating mode turn on click
     private class cheatListener implements View.OnClickListener{

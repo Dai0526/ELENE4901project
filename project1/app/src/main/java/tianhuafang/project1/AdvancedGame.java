@@ -60,7 +60,7 @@ public class AdvancedGame extends AppCompatActivity {
 
         resetListener reset = new resetListener();
         set_btn.setOnClickListener(reset);
-        
+
 
     }
 
